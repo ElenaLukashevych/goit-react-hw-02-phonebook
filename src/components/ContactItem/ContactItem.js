@@ -5,7 +5,7 @@ import s from './ContactItem.module.css';
 
 function ContactItem({ name, number, id, deleteContact }) {
     return (
-        <li className={s.item}><p>{ name }: { number }</p> <button onClick={() => deleteContact(id)} type="button">Delete</button></li>
+        <li className={s.item}><p>{ name }: { number }</p> <button className={s.button} onClick={() => deleteContact(id)} type="button">Delete</button></li>
     )
     
 }

@@ -36,6 +36,8 @@ class ContactForm extends Component {
         <label>
           Name
             <input
+              placeholder="Lenka"
+              className={s.input}
               type="text"
               name="name"
               value={this.state.name}
@@ -49,6 +51,8 @@ class ContactForm extends Component {
           <label>
             Number
             <input
+              placeholder="0636909298"
+              className={s.input}
               type="tel"
               name="number"
               value={this.state.number}
@@ -59,7 +63,7 @@ class ContactForm extends Component {
             />
           </label>
 
-          <button type="submit">Add contact</button>
+          <button className={s.button} type="submit">Add contact</button>
             </form>
         )
     }
